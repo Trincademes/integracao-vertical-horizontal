@@ -133,19 +133,26 @@ Com a redução de desperdícios e aumento da eficiência produtiva, estima-se r
 
 ## 4.1 Arquitetura Proposta
 
-```
-                [ Rede Corporativa ]
-                        |
-                 [ Firewall Industrial ]
-                        |
-                [ Switch Industrial ]
-                  /       |       \
-                 /        |        \
-          [CLP]      [Computador]   [IHM]
-            |              |
-       [Sensores]      [Sistema SCADA]
-            |
-       [Atuadores/Motores]
+flowchart TD
+    A[Rede Corporativa]
+    B[Firewall Industrial]
+    C[Switch Industrial]
+
+    D[CLP]
+    E[Computador]
+    F[IHM]
+
+    G[Sensores]
+    H[Sistema SCADA]
+    I[Atuadores / Motores]
+
+    A --> B --> C
+    C --> D
+    C --> E
+    C --> F
+
+    D --> G --> I
+    E --> H
 ```
 
 ---
