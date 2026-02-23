@@ -133,6 +133,7 @@ Com a redução de desperdícios e aumento da eficiência produtiva, estima-se r
 
 ## 4.1 Arquitetura Proposta
 
+```mermaid
 flowchart TD
     A[Rede Corporativa]
     B[Firewall Industrial]
